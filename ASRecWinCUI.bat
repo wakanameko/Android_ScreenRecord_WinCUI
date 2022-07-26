@@ -37,3 +37,11 @@ if %slo%==2 goto :Screenrec
 adb shell screencap -p /sdcard/screen.png
 adb pull /sdcard/screen.png　%folder%/screen.png
 adb shell rm /sdcard/screen.png
+goto :exit
+
+:Screenrec
+
+
+:exit
+echo 終了処理中...
+exit
