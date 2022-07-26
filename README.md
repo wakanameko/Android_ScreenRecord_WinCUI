@@ -1,0 +1,2 @@
+# Android_ScreenRecord_WinCUI
+こっちのほうが作るの簡単だろうな〜と思って作った
