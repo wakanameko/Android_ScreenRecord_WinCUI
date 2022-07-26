@@ -21,11 +21,17 @@ set dialog=%dialog%Close:End Sub</script><hta:application caption=no showintaskb
 set folder=
 for /f "delims=" %%p in ('MSHTA.EXE %dialog%') do  set "folder=%%p"
 echo selected  folder is : "%folder%"
-goto SLO
+goto :SLO
 
 
 ::selectoptions
 :SLO
 cls
 echo ScreenRecord:1 ScreenShot:2
-set 
+set slo=
+set /p slo=Enter number and pless enter:
+if %slo%==1 goto :Screenshot
+if %slo%==2 goto :Screenrec
+
+:Screenshot
+adb shell 
