@@ -34,4 +34,6 @@ if %slo%==1 goto :Screenshot
 if %slo%==2 goto :Screenrec
 
 :Screenshot
-adb shell 
+adb shell screencap -p /sdcard/screen.png
+adb pull /sdcard/screen.png　%folder%/screen.png
+adb shell rm /sdcard/screen.png
